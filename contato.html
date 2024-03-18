@@ -1,0 +1,60 @@
+<!DOCTYPE html> <!-- Declaração do tipo de documento HTML -->
+<html lang="pt-BR"> <!-- Início do documento HTML com especificação da linguagem (português do Brasil) -->
+<head>
+    <meta charset="UTF-8"> <!-- Configuração do conjunto de caracteres (UTF-8) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuração de visualização para dispositivos móveis -->
+    <title>Contato</title> <!-- Título da página exibido na aba do navegador -->
+    <link rel="stylesheet" href="estilos.css"> <!-- Importação do arquivo de estilo externo -->
+</head>
+<body>
+    <nav>
+        <ul> <!-- Lista não ordenada -->
+            <!-- Links de navegação -->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre Mim</a></li>
+            <li><a href="educacao.html">Educação</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <!-- Links externos -->
+            <li><a href="https://github.com/lorenacsilva">Portfólio</a></li>
+            <li><a href="https://www.linkedin.com/in/lorenacsilva/">Linkedin</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Contato</h1> <!-- Título principal da página -->
+    </header>
+    <main>
+        <section class="formulario">
+            <!-- Seção de formulário de contato -->
+            <h2>Entre em Contato</h2>
+            <!-- Formulário de contato -->
+            <form id="contactForm" method="post">
+                <label for="nome">Nome:</label> <!-- Campo de entrada para o nome -->
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="email">Email:</label> <!-- Campo de entrada para o email -->
+                <input type="email" id="email" name="email" required>
+                
+                <label for="mensagem">Mensagem:</label> <!-- Campo de entrada para a mensagem -->
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                
+                <input type="submit" value="Enviar"> <!-- Botão de envio do formulário -->
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 - Lorena Cristine de Almeida Silva - Uninter </p> <!-- Informação de autoria e direitos autorais -->
+    </footer>
+
+    <!-- Div de popup para confirmação de envio do formulário -->
+    <div id="popup" class="popup" style="display: none;">
+        <h3>Formulário Enviado</h3>
+        <p>O formulário foi enviado com sucesso!</p>
+        <button id="closeButton">OK</button>
+    </div>
+
+    <!-- Div de overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <script src="script.js"></script> <!-- Importação do arquivo de script JavaScript -->
+</body>
+</html>

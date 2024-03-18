@@ -1,0 +1,161 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte padrão para o corpo do documento */
+    margin: 0; /* Remove margens ao redor do corpo do documento */
+    padding: 0; /* Remove preenchimento ao redor do corpo do documento */
+    background-color: #f8f8f8; /* Cor de fundo do corpo do documento */
+    color: #333; /* Cor do texto */
+}
+
+nav {
+    background-color: #0089b3; /* Cor de fundo da barra de navegação */
+    padding: 10px 0; /* Adiciona preenchimento acima e abaixo da barra de navegação */
+}
+
+nav ul {
+    list-style-type: none; /* Remove os marcadores de lista */
+    padding: 0; /* Remove o preenchimento da lista */
+    margin: 0; /* Remove as margens da lista */
+    text-align: center; /* Alinha os itens da lista ao centro */
+}
+
+nav ul li {
+    display: inline; /* Exibe os itens da lista em linha */
+    margin-right: 20px; /* Adiciona margem à direita entre os itens da lista */
+}
+
+/* Estilos para os itens do menu */
+nav ul li a {
+    text-decoration: none; /* Remove a decoração do link */
+    color: white; /* Cor do texto dos links */
+    font-size: 18px; /* Tamanho da fonte dos links */
+    transition: color 0.3s ease; /* Transição suave da cor ao passar o mouse */
+}
+
+nav ul li a:hover {
+    color: #7bb5c9; /* Cor do texto dos links alterada ao passar o mouse */
+}
+
+
+header {
+    background-color: #6dd1f0; /* Cor de fundo do cabeçalho */
+    color: white; /* Cor do texto no cabeçalho */
+    text-align: center; /* Alinhamento do texto no centro */
+    padding: 50px 0; /* Adiciona preenchimento acima e abaixo do cabeçalho */
+}
+
+footer {
+    background-color: #0089b3; /* Cor de fundo do rodapé */
+    color: white; /* Cor do texto no rodapé */
+    text-align: center; /* Alinhamento do texto no centro */
+    padding: 20px 0; /* Adiciona preenchimento acima e abaixo do rodapé */
+}
+
+/* Estilos específicos */
+main {
+    padding: 20px; /* Adiciona preenchimento dentro da seção principal */
+}
+
+/* Estilos para a seção de conteúdo */
+section {
+    background-color: white; /* Cor de fundo das seções */
+    border-radius: 5px; /* Borda arredondada */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 20px; /* Adiciona preenchimento dentro das seções */
+    margin-bottom: 20px; /* Adiciona margem abaixo das seções */
+}
+
+.formulario h2{
+    margin: 0 auto; /* Centraliza o título do formulário */
+    margin-bottom:20px; /* Adiciona margem abaixo do título do formulário */
+    max-width: 800px; /* Largura máxima do formulário */
+    text-align: left; /* Alinha o texto do título do formulário à esquerda */
+}
+
+h2 {
+    color: #0056b3; /* Cor do título */
+}
+
+p {
+    font-size: 16px; /* Tamanho da fonte do parágrafo */
+    line-height: 1.6; /* Altura da linha */
+}
+
+/* Estilos para formulário de contato */
+form {
+    max-width: 800px; /* Largura máxima do formulário */
+    margin: 0 auto; /* Centraliza o formulário */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* Largura total dos campos de entrada */
+    padding: 10px; /* Adiciona preenchimento dentro dos campos de entrada */
+    margin-bottom: 20px; /* Adiciona margem abaixo dos campos de entrada */
+    border: 1px solid #ccc; /* Borda dos campos de entrada */
+    border-radius: 5px; /* Borda arredondada dos campos de entrada */
+    box-sizing: border-box; /* Garante que a largura inclua preenchimento e borda */
+}
+
+input[type="submit"] {
+    background-color: #0056b3; /* Cor de fundo do botão de envio */
+    color: white; /* Cor do texto do botão de envio */
+    border: none; /* Remove a borda do botão de envio */
+    padding: 10px 20px; /* Adiciona preenchimento dentro do botão de envio */
+    cursor: pointer; /* Altera o cursor para indicar que o botão é clicável */
+    border-radius: 5px; /* Borda arredondada do botão de envio */
+}
+
+input[type="submit"]:hover {
+    background-color: #004080; /* Cor de fundo do botão de envio alterada ao passar o mouse */
+}
+
+/* Estilos para o pop-up de confirmação */
+.popup {
+    position: fixed; /* Posicionamento fixo em relação à tela */
+    top: 50%; /* Posiciona o pop-up no centro verticalmente */
+    left: 50%; /* Posiciona o pop-up no centro horizontalmente */
+    transform: translate(-50%, -50%); /* Centraliza o pop-up */
+    background-color: #fff; /* Cor de fundo do pop-up */
+    padding: 20px; /* Adiciona preenchimento dentro do pop-up */
+    border-radius: 5px; /* Borda arredondada do pop-up */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    z-index: 9999; /* Z-index alto para garantir que o pop-up esteja acima de outros elementos */
+}
+
+.popup h3 {
+    color: #0056b3; /* Cor do título do pop-up */
+    margin-bottom: 10px; /* Adiciona margem abaixo do título do pop-up */
+}
+
+.popup p {
+    font-size: 16px; /* Tamanho da fonte do texto do pop-up */
+    line-height: 1.6; /* Altura da linha do texto do pop-up */
+}
+
+.popup button {
+    background-color: #0056b3; /* Cor de fundo do botão do pop-up */
+    color: white; /* Cor do texto do botão do pop-up */
+    border: none; /* Remove a borda do botão do pop-up */
+    padding: 10px 20px; /* Adiciona preenchimento dentro do botão do pop-up */
+    cursor: pointer; /* Altera o cursor para indicar que o botão é clicável */
+    border-radius: 5px; /* Borda arredondada do botão do pop-up */
+}
+
+.popup button:hover {
+    background-color: #004080; /* Cor de fundo do botão do pop-up alterada ao passar o mouse */
+}
+
+/* Estilo do overlay */
+.overlay {
+    position: fixed; /* Posicionamento fixo em relação à tela */
+    top: 0; /* Posiciona o overlay no topo da tela */
+    left: 0; /* Posiciona o overlay no lado esquerdo da tela */
+    width: 100%; /* Largura total do overlay */
+    height: 100%; /* Altura total do overlay */
+    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo do overlay com transparência */
+    backdrop-filter: blur(5px); /* Aplica um borrão ao overlay */
+    z-index: 999; /* Z-index alto para garantir que o overlay esteja acima de outros elementos */
+    display: none; /* Inicialmente oculto */
+}
